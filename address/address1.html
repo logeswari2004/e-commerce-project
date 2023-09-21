@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./address1.css">
+</head>
+<body>
+  <div id="navbar">
+  <div id="div2">
+    <h5 id="first">BAG</h5>
+    <div class="line"></div>
+    <h5>ADDRESS</h5>
+    <div class="line"></div>
+    <h5 id="third">PAYMENT</h5>
+</div>
+<div id="div3">
+    <img src="../images1/snip.JPG" alt="">
+    <p>100 % <b>SECURE</b></p>
+</div>
+</div>
+    <div class="container">
+        <h1>Shipping</h1>
+        <p>Please enter your shipping details.</p>
+        <hr />
+        <div class="form">
+          
+        <div class="fields fields--2">
+          <label class="field">
+            <span class="field__label" for="firstname">First name</span>
+            <input class="field__input" type="text" id="firstname" value="John" />
+          </label>
+          <label class="field">
+            <span class="field__label" for="lastname">Last name</span>
+            <input class="field__input" type="text" id="lastname" value="Doe" />
+          </label>
+        </div>
+        <label class="field">
+          <span class="field__label" for="address">Address</span>
+          <input class="field__input" type="text" id="address" />
+        </label>
+        <label class="field">
+          <span class="field__label" for="country">Country</span>
+          <select class="field__input" id="country">
+            <option value=""></option>
+            <option value="unitedstates">United States</option>
+            <option value="India">India</option>
+          </select>
+        </label>
+        <div class="fields fields--3">
+          <label class="field">
+            <span class="field__label" for="zipcode">Zip code</span>
+            <input class="field__input" type="text" id="zipcode" />
+          </label>
+          <label class="field">
+            <span class="field__label" for="city">City</span>
+            <input class="field__input" type="text" id="city" />
+          </label>
+          <label class="field">
+            <span class="field__label" for="state">State</span>
+            <select class="field__input" id="state">
+              <option value=""></option>
+              <option value="Tamilnadu">Tamilnadu</option>
+              <option value="Kerala">Kerala</option>
+            </select>
+          </label>
+        </div>
+        </div>
+        <hr>
+        <a href="../payment.html"> <div class="button">
+          CONTINUE
+       </div></a>
+        <!-- <a href="./payment.html"> <div id="place"></div>
+        <button class="button">Continue</button> -->
+      </div>
+</body>
+</html>
+<script>
+  document.querySelector('img').addEventListener('click', function(){
+      window.location.href = "./index.html"
+  })
+
+document.getElementById('first').addEventListener('click', function(){
+window.location.href = "./cart.html"
+})
+document.getElementById('third').addEventListener('click', function(){
+window.location.href = "./payment.html"
+})
+</script>
